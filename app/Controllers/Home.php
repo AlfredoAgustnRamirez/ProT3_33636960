@@ -7,28 +7,28 @@ class Home extends BaseController
     public function index()
     {
         $data['titulo']='principal';
-        echo view('head',$data);
-        echo view('menu');
-        echo view('principal');
-        echo view('footer');
+        echo view('layout/head',$data);
+        echo view('layout/menu');
+        echo view('layout/principal');
+        echo view('layout/footer');
     }  
 
     public function nosotros()
     {
         $data['titulo']='nosotros';
-            echo view('head',$data);
-            echo view('menu');
+            echo view('layout/head',$data);
+            echo view('layout/menu');
             echo view('nosotros');
-            echo view('footer');
+            echo view('layout/footer');
     }  
 
     public function acerca()
     {
-        $data['titulo']='nosotros';
-            echo view('head',$data);
-            echo view('menu');
+        $data['titulo']='acerca de';
+            echo view('layout/head',$data);
+            echo view('layout/menu');
             echo view('acerca');
-            echo view('footer');
+            echo view('layout/footer');
     }  
     
 }

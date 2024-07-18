@@ -9,10 +9,10 @@ class LoginController extends BaseController{
 	public function index(){
 		helper(['form']);
 		$data['title'] = 'Login';
-		echo view('head', $data);
-        echo view('menu');
+		echo view('layout/head', $data);
+        echo view('layout/menu');
         echo view('login/login');
-        echo view('footer');
+        echo view('layout/footer');
 	} 
     
 	public function ingresar(){

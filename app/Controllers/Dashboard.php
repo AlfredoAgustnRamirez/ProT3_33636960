@@ -8,20 +8,20 @@ class Dashboard extends BaseController{
     {
     
         $dato['titulo']='panel de usuario';
-        echo view('head', $dato);
-        echo view('menu');
+        echo view('layout/head', $dato);
+        echo view('layout/menu');
         echo view('login/dashboard');
-        echo view('footer');
+        echo view('layout/footer');
     }
 
     public function panel()
     {
        
         $dato['titulo']='panel de usuario';
-        echo view('head', $dato);
-        echo view('menu');
+        echo view('layout/head', $dato);
+        echo view('layout/menu');
         echo view('login/dashboard_admin');
-        echo view('footer');
+        echo view('layout/footer');
     }
 }
 

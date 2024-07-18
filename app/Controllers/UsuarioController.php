@@ -15,10 +15,10 @@ class UsuarioController extends BaseController
     public function create()
     {
         $data['titulo'] = 'Registro';
-        echo view('head', $data);
-        echo view('menu');
+        echo view('layout/head', $data);
+        echo view('layout/menu');
         echo view('usuario/registrarse');
-        echo view('footer');  
+        echo view('layout/footer');  
     }
 
     public function formValidation()
@@ -38,8 +38,8 @@ class UsuarioController extends BaseController
 
         if (!$input) {
             $data['titulo'] = 'Registro';
-            echo view('head', $data);
-            echo view('menu');
+            echo view('layout/head', $data);
+            echo view('layout/menu');
             echo view('usuario/registrarse', [
                 'validation' => $this->validator
             ]);
@@ -53,8 +53,6 @@ class UsuarioController extends BaseController
             ]);
             return $this->response->redirect(site_url(''));
         }
-        echo view('footer');  
+        echo view('layout/footer');  
     }
-
-    
 }

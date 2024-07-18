@@ -12,20 +12,20 @@ class CrudController extends BaseController
     {
         $model = new Usuarios_model();
         $data['usuarios'] = $model->orderBy('id_usuario', 'DESC')->findAll();
-        echo view('head', $data);
-        echo view('menu');
+        echo view('layout/head', $data);
+        echo view('layout/menu');
         echo view('usuario/lista_usuario', $data);
-        echo view('footer');
+        echo view('layout/footer');
     }
 
     // formulario agragar un usuario 
     public function create()
     {
         $data['titulo'] = 'altaUsuario';
-        echo view('head', $data);
-        echo view('menu');
+        echo view('layout/head', $data);
+        echo view('layout/menu');
         echo view('usuario/alta_usuario');
-        echo view('footer');
+        echo view('layout/footer');
         
     }
 
@@ -46,8 +46,8 @@ class CrudController extends BaseController
 
         if (!$input) {
             $data['titulo'] = 'Registro';
-            echo view('head', $data);
-            echo view('menu');
+            echo view('layout/head', $data);
+            echo view('layout/menu');
             echo view('usuario/alta_usuario', [
                 'validation' => $this->validator
             ]);
@@ -62,7 +62,7 @@ class CrudController extends BaseController
             $model->insert($data);
             return $this->response->redirect(base_url('/lista_usuario'));
         }
-            echo view('footer');
+            echo view('layout/footer');
     }
 
     // mostrar formulario de un usuario
@@ -71,10 +71,10 @@ class CrudController extends BaseController
         $model = new Usuarios_model();
         $dato['user_obj'] = $model->where('id_usuario', $id_usuario)->first();
         $data['titulo'] = 'editar';
-        echo view('head', $data);
-        echo view('menu');
+        echo view('layout/head', $data);
+        echo view('layout/menu');
         echo view('usuario/modificar_usuario', $dato);
-        echo view('footer');
+        echo view('layout/footer');
     }
 
     // modoficar datos de un asuario
@@ -111,10 +111,10 @@ class CrudController extends BaseController
         $NameModel = new Usuarios_model();
         $data['usuarios'] = $NameModel->orderBy('id_usuario', 'DESC')->findAll();
         $dato['titulo'] = 'eliminados';
-        echo view('head', $dato);
-        echo view('menu');
+        echo view('layout/head', $dato);
+        echo view('layout/menu');
         echo view('usuario/usuarios_eliminados', $data);
-        echo view('footer');
+        echo view('layout/footer');
     }
 
     public function quitar($baja = null)
