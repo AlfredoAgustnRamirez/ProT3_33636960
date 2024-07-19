@@ -107,7 +107,6 @@
         </div>
       </div>
     </nav>
-
   <?php } ?>
 
 <?php } else { ?>

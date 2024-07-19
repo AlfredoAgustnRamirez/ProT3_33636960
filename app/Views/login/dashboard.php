@@ -17,9 +17,9 @@
                 <div class="card-body text-center">
                     <h3 class="card-title">Gracias por tu visita <i class="far fa-smile"></i></h3>
                     <p class="card-text">Descubre nuestra amplia selección de productos.</p>
-                    <div class="form-group py-2">
-                        <a href="#" class="btn btn-primary">Ver todos los productos</a>
-                        <a href="<?php echo base_url('/'); ?>" class="btn btn-secondary">Inicio</a>
+                    <div class="form-group py-2 text-center">
+                        <a href="#" class="btn btn-primary mx-2">Ver todos los productos</a>
+                        <a href="<?php echo base_url('/'); ?>" class="btn btn-outline-secondary mx-2">Inicio</a>
                     </div>
                 </div>
             </div>

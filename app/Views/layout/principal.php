@@ -1,5 +1,4 @@
 <body>
-
   <section>
     <div class="container-fluid mt-3">
       <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
@@ -121,6 +120,8 @@
       </div>
     </div>
   </div>
+
+  </body>
 
   <script>
     document.querySelectorAll('.ver-mas-btn').forEach(button => {
