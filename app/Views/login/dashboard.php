@@ -19,7 +19,7 @@
                     <p class="card-text">Descubre nuestra amplia selección de productos.</p>
                     <div class="form-group py-2 text-center">
                         <a href="#" class="btn btn-primary mx-2">Ver todos los productos</a>
-                        <a href="<?php echo base_url('/'); ?>" class="btn btn-outline-secondary mx-2">Inicio</a>
+                        <a href="<?php echo base_url('/'); ?>" class="btn btn-secondary mx-2">Inicio</a>
                     </div>
                 </div>
             </div>

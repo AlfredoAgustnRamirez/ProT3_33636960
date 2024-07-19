@@ -8,7 +8,7 @@
 
   <title>AlfAg-Tech</title>
 
-  <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>/public/assets/css/estilo.css">
+  <link rel="stylesheet" type="text/css" href="<?= base_url('public/assets/css/mi_estilo.css') ?>">
   <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>/public/assets/css/bootstrap.min.css">
   <link rel="shortcut icon" href="<?php echo base_url(); ?>/public/assets/img/Al-FreTech.png">
 

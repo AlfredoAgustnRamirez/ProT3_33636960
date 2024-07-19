@@ -21,7 +21,7 @@ class LoginController extends BaseController{
     
     $rules = [
         'email' => 'required|valid_email',
-        'password' => 'required|min_length[6]'
+        'password' => 'required|min_length[4]'
     ];
 
     if (!$this->validate($rules)) {
