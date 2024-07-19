@@ -122,7 +122,7 @@ class CrudController extends BaseController
         $NameModel = new Usuarios_model();
         $data['usuarios'] = $NameModel->where('baja', $baja)->delete($baja);
         $data = ([
-            'baja' => 0,
+            'baja' => 'Si',
         ]);
         $NameModel->update($baja, $data);
         return $this->response->redirect(base_url('/lista_usuario'));
@@ -134,7 +134,7 @@ class CrudController extends BaseController
         $NameModel = new Usuarios_model();
         $data['usuarios'] = $NameModel->where('baja', $baja)->delete($baja);
         $data = ([
-            'baja' => 1,
+            'baja' => 'No',
         ]);
         $NameModel->update($baja, $data);
         return $this->response->redirect(base_url('/usuarios_eliminados'));

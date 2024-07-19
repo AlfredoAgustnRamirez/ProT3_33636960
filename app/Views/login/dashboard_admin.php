@@ -12,7 +12,6 @@
 
 <div class="container mt-5">
     <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-
     </div>
     <div class="card-body">
         <h3 class="card-title">
@@ -20,8 +19,6 @@
             <h5 class="card-text">
                 </p>
                 <div class="form-group py-2">
-
-
                 </div>
     </div>
 </div>
