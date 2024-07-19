@@ -7,7 +7,6 @@ use CodeIgniter\Controller;
 
 class CrudController extends BaseController
 {
-    // Muestra lista de usuarios 
     public function index()
     {
         $model = new Usuarios_model();
@@ -18,7 +17,6 @@ class CrudController extends BaseController
         echo view('layout/footer');
     }
 
-    // formulario agragar un usuario 
     public function create()
     {
         $data['titulo'] = 'altaUsuario';
@@ -29,7 +27,6 @@ class CrudController extends BaseController
         
     }
 
-    // agragar usuario a la BDD
     public function store()
     {
         $input = $this->validate([
@@ -65,7 +62,6 @@ class CrudController extends BaseController
             echo view('layout/footer');
     }
 
-    // mostrar formulario de un usuario
     public function singleUser($id_usuario = null)
     {
         $model = new Usuarios_model();
@@ -77,7 +73,6 @@ class CrudController extends BaseController
         echo view('layout/footer');
     }
 
-    // modoficar datos de un asuario
     public function update()
     {
         $session = session();
@@ -99,15 +94,13 @@ class CrudController extends BaseController
         }
     }
 
-    // borrar un usuario (fisico)
-    public function delete($id = null)
-    {
+    /*public function delete($id = null) {
         $model = new Usuarios_model();
         $data['usuarios'] = $model->where('id_usuario', $id)->delete($id);
         return $this->response->redirect(base_url('/lista_usuario'));
-    }
+    }*/
 
-    public function usuarios_eliminados(){
+    public function usuarios_eliminados() {
         $NameModel = new Usuarios_model();
         $data['usuarios'] = $NameModel->orderBy('id_usuario', 'DESC')->findAll();
         $dato['titulo'] = 'eliminados';
