@@ -66,6 +66,5 @@
     <a class="text-reset fw-bold" href="#!">AlfAg-Tech.com</a>
   </div>
 </footer>
-</body>
 
 </html>

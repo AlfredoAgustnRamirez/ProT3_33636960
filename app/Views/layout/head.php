@@ -2,22 +2,23 @@
 <html lang="es">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlfAg-Tech</title>
 
-  <title>AlfAg-Tech</title>
+    <link rel="stylesheet" href="<?= base_url('public/assets/css/bootstrap.min.css') ?>">
+    <link rel="stylesheet" href="<?= base_url('public/assets/css/estilos.css') ?>">
+    <link rel="shortcut icon" href="<?= base_url('public/assets/img/Al-FreTech.png') ?>">
 
-  <link rel="stylesheet" type="text/css" href="<?= base_url('public/assets/css/mi_estilo.css') ?>">
-  <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>/public/assets/css/bootstrap.min.css">
-  <link rel="shortcut icon" href="<?php echo base_url(); ?>/public/assets/img/Al-FreTech.png">
+    <script src="<?= base_url('public/assets/js/bootstrap.bundle.min.js') ?>"></script>
+    <script src="<?= base_url('public/assets/js/bootstrap.bundle.js') ?>"></script>
+    <script src="<?= base_url('public/assets/js/a076d05399.js') ?>"></script>
 
-</head>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
 <body>
-  <script src="<?php echo base_url(); ?>/public/assets/js/bootstrap.bundle.js"></script>
-  <script src="<?php echo base_url(); ?>/public/assets/js/a076d05399.js"></script>
-  <script src="<?php echo base_url(); ?>/public/assets/js/bootstrap.bundle.min.js"></script>
+ 
 
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>

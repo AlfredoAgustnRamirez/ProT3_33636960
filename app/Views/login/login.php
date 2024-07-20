@@ -34,8 +34,8 @@
                         <?php endif; ?>
                     </div>
                     <div class="d-grid">
-                        <button type="submit" class="btn btn-primary btn-block mt-2">Iniciar Sesión</button>
-                        <button type="button" class="btn btn-secondary btn-block mt-2">Cancelar</button>
+                        <button type="submit" class="btn btn-success btn-block">Iniciar Sesión</button>
+                        <button type="button" class="btn btn-danger btn-block mt-2">Cancelar</button>
                     </div>
                 </form>
             </div>
