@@ -8,11 +8,12 @@ use CodeIgniter\Filters\FilterInterface;
 class Auth implements FilterInterface
 {
 	public function before(RequestInterface $request, $arguments = null)
-	{
-		if(!session()->get('logged_in')){
-			return redirect()->to('login'); 
-		}
-	}
+{
+    if (!session()->get('logged_in')) {
+        return redirect()->to(base_url('/login'));
+    }
+}
+
  
 	//--------------------------------------------------------------------
  

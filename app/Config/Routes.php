@@ -36,8 +36,8 @@ $routes->setAutoRoute(true);
 
 //rutas principales
 $routes->get('/principal', 'Home::index');
-$routes->get('/nosotros', 'Home::nosotros');
-$routes->get('/acerca', 'Home::acerca');
+$routes->get('/nosotros', 'Home::nosotros',  ['filter' => 'auth']);
+$routes->get('/acerca', 'Home::acerca',  ['filter' => 'auth']);
 
 // Ruta del logueo 
 $routes->get('/login', 'LoginController::index');
@@ -51,12 +51,12 @@ $routes->get('/registrarse', 'UsuarioController::create');
 $routes->post('/enviar-form', 'UsuarioController::formValidation');
 
 // Rutas del CRUD de usuario
-$routes->get('/lista_usuario', 'CrudController::index');
-$routes->get('/alta_usuario', 'CrudController::create');
+$routes->get('/lista_usuario', 'CrudController::index',  ['filter' => 'auth']);
+$routes->get('/alta_usuario', 'CrudController::create',  ['filter' => 'auth']);
 $routes->post('/submit-form', 'CrudController::store');
-$routes->get('/modificar_usuario/(:num)', 'CrudController::singleUser/$1');
-$routes->post('/update', 'CrudController::update');
+$routes->get('/modificar_usuario/(:num)', 'CrudController::singleUser/$1',  ['filter' => 'auth']);
+$routes->post('/update', 'CrudController::update',  ['filter' => 'auth']);
 $routes->get('/delete/(:num)', 'CrudController::delete/$1');
-$routes->get('/usuarios_eliminados', 'CrudController::usuarios_eliminados');
-$routes->get('/desactivar_usuario/(:num)', 'CrudController::quitar/$1');
-$routes->get('/activar_usuario/(:num)', 'CrudController::colocar/$1');
+$routes->get('/usuarios_eliminados', 'CrudController::usuarios_eliminados',  ['filter' => 'auth']);
+$routes->get('/desactivar_usuario/(:num)', 'CrudController::quitar/$1',  ['filter' => 'auth']);
+$routes->get('/activar_usuario/(:num)', 'CrudController::colocar/$1',  ['filter' => 'auth']);
