@@ -27,8 +27,8 @@
                     <input type="text" name="usuario" class="form-control" value="<?php echo $user_obj['usuario']; ?>">
                 </div>
                 <div class="form-group">
-                    <label>Contaseña</label>
-                    <input type="password" name="password" class="form-control" value="<?php echo $user_obj['password']; ?>">
+                    <label>Perfil Id</label>
+                    <input type="perfil_id" name="perfil_id" class="form-control" value="<?php echo $user_obj['perfil_id']; ?>">
                 </div>
                 <div class="form-group py-2">
                     <button type="submit" class="btn btn-primary">Modificar</button>

@@ -67,8 +67,8 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="perfil_id" class="form-label">Perfil ID</label>
-                    <input type="text" id="perfil_id" name="perfil_id" class="form-control" placeholder="Perfil ID">
+                    <label for="perfil_id" class="form-label">Perfil Id</label>
+                    <input type="text" id="perfil_id" name="perfil_id" class="form-control" placeholder="Perfil Id">
                     <?php if ($validation->getError('perfil_id')) { ?>
                         <div class='alert alert-danger mt-2'>
                             <?= esc($validation->getError('perfil_id')) ?>

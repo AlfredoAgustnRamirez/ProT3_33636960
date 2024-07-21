@@ -37,8 +37,11 @@
                                     <td><?php echo $usuario['email']; ?></td>
                                     <td class="text-center">
                                         <?php if ($usuario['baja'] == 'Si') : ?>
-                                            <a href="<?php echo base_url('activar_usuario/' . $usuario['id_usuario']); ?>" class="btn btn-primary btn-sm">Activar</a>
+                                            <a href="<?php echo base_url('activar_usuario/' . $usuario['id_usuario']); ?>" class="btn btn-primary btn-sm">
+                                                <i class="fas fa-check"></i> Activar
+                                            </a>
                                         <?php endif; ?>
+
                                     </td>
                                 </tr>
                             <?php endif; ?>

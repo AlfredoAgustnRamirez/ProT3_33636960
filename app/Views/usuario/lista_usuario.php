@@ -5,7 +5,7 @@
 </div>
 <div class="container mt-4">
     <div class="d-flex justify-content-end">
-        <a href="<?php echo base_url('/alta_usuario') ?>" class="btn btn-primary">Agregar Usuario</a>
+        <a href="<?php echo base_url('/alta_usuario') ?>" class="btn btn-primary mr-2">Agregar Usuario</a>
         <a href="<?php echo base_url('/usuarios_eliminados') ?>" class="btn btn-secondary">Usuarios Eliminados</a>
     </div>
     <div class="mt-3 table-responsive">
@@ -16,6 +16,7 @@
                     <th class="text-center">Nombre</th>
                     <th class="text-center">Apellido</th>
                     <th class="text-center">Email</th>
+                    <th class="text-center">Perfil Id</th>
                     <th class="text-center">Acción</th>
                 </tr>
             </thead>
@@ -24,14 +25,20 @@
                     <?php if ($usuarios && ($usuario['baja'] == 'No')) : ?>
                         <tr>
                             <td class="text-center"><?php echo $usuario['id_usuario']; ?></td>
-                            <td ><?php echo $usuario['nombre']; ?></td>
+                            <td><?php echo $usuario['nombre']; ?></td>
                             <td><?php echo $usuario['apellido']; ?></td>
                             <td><?php echo $usuario['email']; ?></td>
+                            <td class="text-center"><?php echo $usuario['perfil_id']; ?></td>
                             <td class="text-center">
-                                <a href="<?php echo base_url('modificar_usuario/' . $usuario['id_usuario']); ?>" class="btn btn-success">Editar</a>
-                                <?php if ($usuario['baja'] == 'No') { ?>
-                                    <a class="btn btn-danger" onclick="return confirm('¿Eliminar Usuario?');" href="<?php echo base_url('desactivar_usuario/' . $usuario['id_usuario']); ?>">Eliminar</a>
-                                <?php } ?>
+                                <a href="<?php echo base_url('modificar_usuario/' . $usuario['id_usuario']); ?>" class="btn btn-success">
+                                    <i class="fas fa-pencil-alt"></i>
+                                </a>
+                                <?php if ($usuario['baja'] == 'No') : ?>
+                                    <a class="btn btn-danger" onclick="return confirm('¿Eliminar Usuario?');" href="<?php echo base_url('desactivar_usuario/' . $usuario['id_usuario']); ?>">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </a>
+                                <?php endif; ?>
+
                             </td>
                         </tr>
                     <?php endif; ?>

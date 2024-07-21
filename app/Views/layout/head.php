@@ -9,15 +9,12 @@
 
     <link rel="stylesheet" href="<?= base_url('public/assets/css/bootstrap.min.css') ?>">
     <link rel="stylesheet" href="<?= base_url('public/assets/css/estilos.css') ?>">
+    <link rel="stylesheet" href="<?= base_url('public/assets/css/all.min.css') ?>">
     <link rel="shortcut icon" href="<?= base_url('public/assets/img/Al-FreTech.png') ?>">
 
     <script src="<?= base_url('public/assets/js/bootstrap.bundle.min.js') ?>"></script>
     <script src="<?= base_url('public/assets/js/bootstrap.bundle.js') ?>"></script>
     <script src="<?= base_url('public/assets/js/a076d05399.js') ?>"></script>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
 <body>
  

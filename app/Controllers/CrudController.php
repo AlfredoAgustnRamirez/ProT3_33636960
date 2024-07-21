@@ -35,8 +35,8 @@ class CrudController extends BaseController
             'email'    => 'required|min_length[4]|max_length[100]|valid_email|is_unique[usuarios.email]',
             'usuario'  => 'required|min_length[3]',
             'password' => 'required|min_length[3]|max_length[10]',
-            'passconf' => 'required|min_length[3]|max_length[10]|matches[password]'
-            
+            'passconf' => 'required|min_length[3]|max_length[10]|matches[password]',
+            'perfil_id'  => 'required|min_length[1]|max_length[1]',
         ]);
 
         $model = new Usuarios_model();
@@ -54,7 +54,8 @@ class CrudController extends BaseController
                 'apellido' => $this->request->getVar('apellido'),
                 'usuario' => $this->request->getVar('usuario'),
                 'email'  => $this->request->getVar('email'),
-                'password'  => password_hash($this->request->getVar('password'), PASSWORD_DEFAULT)
+                'password'  => password_hash($this->request->getVar('password'), PASSWORD_DEFAULT),
+                'perfil_id'  => $this->request->getVar('perfil_id'),
             ];
             $model->insert($data);
             return $this->response->redirect(base_url('/lista_usuario'));
@@ -84,7 +85,8 @@ class CrudController extends BaseController
             'email'  => $this->request->getVar('email'),
             'usuario' => $this->request->getVar('usuario'),
             'nombre' => $this->request->getVar('nombre'),
-            'password'  => password_hash($this->request->getVar('password'), PASSWORD_DEFAULT)
+            'perfil_id' => $this->request->getVar('perfil_id'),
+            //'password'  => password_hash($this->request->getVar('password'), PASSWORD_DEFAULT)
         ];
         $model->update($id, $data);
         if ($session->get('perfil_id') == 1){

@@ -36,8 +36,8 @@ $routes->setAutoRoute(true);
 
 //rutas principales
 $routes->get('/principal', 'Home::index');
-$routes->get('/nosotros', 'Home::nosotros',  ['filter' => 'auth']);
-$routes->get('/acerca', 'Home::acerca',  ['filter' => 'auth']);
+$routes->get('/nosotros', 'Home::nosotros');
+$routes->get('/acerca', 'Home::acerca');
 
 // Ruta del logueo 
 $routes->get('/login', 'LoginController::index');

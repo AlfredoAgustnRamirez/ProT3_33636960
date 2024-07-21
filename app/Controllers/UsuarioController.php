@@ -31,8 +31,6 @@ class UsuarioController extends BaseController
             'usuario'  => 'required|min_length[3]',
             'password' => 'required|min_length[3]|max_length[10]',
             'passconf' => 'required|min_length[3]|max_length[10]|matches[password]'
-            
-            
         ]);
         $formModel = new Usuarios_model();
 
