@@ -35,8 +35,8 @@
                             <?php endif; ?>
                         </div>
                         <div class="d-grid mb-3">
-                            <button type="submit" class="btn btn-success btn-block">Iniciar Sesión</button>
-                            <button type="submit" class="btn btn-danger btn-block">Cancelar</button>
+                            <button type="submit" class="btn btn-iniciar btn-block">Iniciar Sesión</button>
+                            <button type="submit" class="btn btn-cancelar btn-block">Cancelar</button>
                         </div>
                         <p class="text-center mb-0"><a href="<?= base_url('registrarse') ?>">¿Aún no está registrado? Regístrese aquí</a></p>
                     </form>

@@ -16,6 +16,6 @@
     <script src="<?= base_url('public/assets/js/bootstrap.bundle.js') ?>"></script>
     <script src="<?= base_url('public/assets/js/a076d05399.js') ?>"></script>
 
-<body>
+<body class="body">
  
 

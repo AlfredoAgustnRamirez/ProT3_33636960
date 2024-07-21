@@ -5,6 +5,10 @@
     max-width: 700px; 
 }
 
+.body {
+    background-color: rgb(200, 221, 255);
+}
+
 .navbar {
     background-color: rgb(146, 183, 233);
 }
@@ -56,6 +60,10 @@
   padding: 10px; 
 }
 
-.btn-verde {
-    background-color: rgb(24, 211, 164);
+.btn-iniciar {
+    background-color: rgb(56, 248, 222);
+}
+
+.btn-cancelar {
+    background-color: rgb(243, 108, 108);
 }
