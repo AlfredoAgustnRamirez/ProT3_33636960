@@ -8,9 +8,9 @@
 
 <div class="container mt-5">
     <div class="row justify-content-center">
-        <div class="col-md-6">
+        <div class="col-md-6 ">
             <form method="post" id="addname" name="addname" action="<?php echo base_url('/enviar-form') ?>">
-                <div class="card border-primary shadow-lg rounded">
+                <div class="card border-primary shadow-lg rounded registrar">
                     <div class="card-body">
                         <div class="mb-3">
                             <label for="nombre" class="form-label">Nombre</label>
@@ -73,7 +73,7 @@
                         </div>
 
                         <div class="d-grid gap-2">
-                            <button type="submit" class="btn btn-success btn-block">Registrar</button>
+                            <button type="submit" class="btn btn-registrar btn-block">Registrar</button>
                             <button type="reset" class="btn btn-info btn-block">Limpiar</button>
                             <a href="<?= site_url('/lista_usuario') ?>" class="btn btn-danger btn-block">Cancelar</a>
                         </div>

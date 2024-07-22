@@ -6,11 +6,11 @@
 }
 
 .body {
-    background-color: rgb(200, 221, 255);
+    background-color: #dfd3c3;
 }
 
 .navbar {
-    background-color: rgb(146, 183, 233);
+    background-color: #c7b198;
 }
 
 .nav-link {
@@ -18,7 +18,7 @@
 }
 
 .jumbo {
-    background-color: rgb(146, 183, 233); 
+    background-color: #c7b198;
     padding: 4rem 2rem; 
     margin-bottom: 0; 
     color: black; 
@@ -38,8 +38,16 @@
     border: none; /
 }
 
+.login {
+    background-color: #fecea8;
+}
+
+.registrar {
+    background-color: #fecea8;
+}
+
 .footer{
-    background-color: rgb(146, 183, 233); 
+    background-color: #c7b198;
 }
 
 .container-fluid {
@@ -62,8 +70,50 @@
 
 .btn-iniciar {
     background-color: rgb(56, 248, 222);
+    padding: 10px 20px;
+    border: none;
+    color: rgb(8, 7, 7);
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transición suave durante 0.3 segundos */
+}
+
+.btn-iniciar:hover {
+    background-color: rgb(56, 188, 168); /* Color diferente al pasar el cursor */
 }
 
 .btn-cancelar {
-    background-color: rgb(243, 108, 108);
+    background-color: rgb(243, 55, 49);
+    padding: 10px 20px;
+    border: none;
+    color: rgb(8, 7, 7);
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transición suave durante 0.3 segundos */
+}
+
+.btn-cancelar:hover {
+    background-color: rgb(235, 95, 91); /* Color diferente al pasar el cursor */
+}
+
+.btn-buscar {
+    background-color: #a55233;
+    border: none;
+    color: rgb(8, 7, 7);
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transición suave durante 0.3 segundos */
+}
+
+.btn-registrar {
+    background-color: #8bf1f1;
+    border: none;
+    color: rgb(8, 7, 7);
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transición suave durante 0.3 segundos */
+}
+
+.btn-registrar:hover {
+    background-color: rgb(69, 195, 233); /* Color diferente al pasar el cursor */
 }

@@ -81,7 +81,7 @@
             <div class="input-group">
               <input type="search" id="form1" class="form-control" placeholder="Buscar...">
               <div class="input-group-append">
-                <button class="btn btn-primary" type="button">
+                <button class="btn btn-buscar" type="button">
                   <i class="fas fa-search"></i>
                 </button>
               </div>
@@ -153,7 +153,7 @@
           <div class="input-group">
             <input type="search" id="form1" class="form-control" placeholder="Buscar...">
             <div class="input-group-append">
-              <button class="btn btn-primary" type="button">
+              <button class="btn btn-buscar" type="button">
                 <i class="fas fa-search"></i>
               </button>
             </div>

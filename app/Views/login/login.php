@@ -7,9 +7,8 @@
 <div class="container mt-5">
     <div class="row justify-content-md-center">
         <div class="col-md-6">
-            <div class="card border-primary shadow-lg rounded">
+            <div class="card border-primary shadow-lg rounded login">
                 <div class="card-body">
-                    <h2 class="card-title text-center mb-4">Ingresar</h2>
                     <?php if (session()->getFlashdata('msg')) : ?>
                         <div class="alert alert-danger" role="alert">
                             <?= session()->getFlashdata('msg') ?>
